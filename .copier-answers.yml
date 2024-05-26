@@ -1,0 +1,9 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 66fd52c
+_src_path: gh:schwallergroup/copier-liac-minimal
+author_email: arthur.bongini@epfl.ch
+author_name: Arthur Bongini
+github_org: abongini
+package_name: ppc_froi_project
+project_name: PPC_FROI_Project
+short_description: Programme that can apply some chemical reaction
