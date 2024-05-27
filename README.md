@@ -36,7 +36,7 @@ main()
 In addition, this python package returns the name of the reaction if it is present in our database but not coded. Several input cases are possible, such as: starting molecule - condition, first starting molecule - second, first starting molecule - second condition and ending molecule - condition.
 Short and sweet, but the real power lies in the detailed documentation grouped together in the various jupyter notebooks placed in the folder of the same name !
 
-Have fun testing reactions! For more information on the types of reactions coded, don't hesitate to consult the Reaction_Functions.ipynb, Lists.ipynb and Dictionnaries.ipynb notebooks! They're packed with information on the patterns of the starting molecules, the conditions of the reactions and the patterns of the final molecules we've coded. Happy codding !
+Have fun testing reactions! For more information on the types of reactions coded, don't hesitate to consult the Reaction_Functions.ipynb, Lists.ipynb and Dictionnaries.ipynb notebooks! They're packed with information on the patterns of the starting molecules, the conditions of the reactions and the patterns of the final molecules we've coded. Happy coding !
 
 ## 👩‍💻 Installation
 
