@@ -143,3 +143,4 @@ abruzov_reaction_chlore = { "Finish" : "P(=O)(OC)(OC)CC", "Condition" : "",
 still_grenari_olefination = { "Finish" : "C/C=C\C(=O)OC", "Condition" : "KHMDS, 18-Crown-6, -78°C", 
                              "Start" : "CC(=O)", "Start2" : "P(OCC(F)(F)F)(OCC(F)(F)F)(=O)CC(=O)OC", "Name" : "Still-Genari Olefination", "Finish2":"" }
 
+pinacol = {"Start": "C(O)C(O)","Start2": "", "Condition" : "H+", "Finish" : "C=O", "Finish2" :"", "Name" : "Pinacol reaction"}
