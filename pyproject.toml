@@ -9,7 +9,9 @@ requires-python = ">=3.10"
 license = {file = "LICENSE"}
 description = "Programme that can apply some chemical reaction"
 dependencies = [
-    # "rdkit",
+    "rdkit",
+    "IPython",
+    "pathlib",
 ]
 authors = [
     {name = "Arthur Bongini", email = "arthur.bongini@epfl.ch"}

@@ -9,15 +9,15 @@ PPC_FROI_Project
 <br>
 
 
-Programme that can apply some chemical reaction
+Program that can apply some chemical reaction
 
 ## 🔥 Usage
 
 ```python
-from mypackage import main_func
+from ppc_froi_project import main
 
 # One line to rule them all
-result = main_func(data)
+main()
 ```
 
 This usage example shows how to quickly leverage the package's main functionality with just one line of code (or a few lines of code). 
