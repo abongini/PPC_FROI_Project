@@ -135,6 +135,7 @@ def check_same_dict_in_list1(start, start2, Reaction):
 
 def check_same_dict_in_list3(finish, condition, Reaction):
     globals_dict = globals()  # Access the global scope
+    matched_subgroup = subgroup_in_finish(finish, Finish)
     if not matched_subgroup:
         print("No matching subgroup found.")
         return None

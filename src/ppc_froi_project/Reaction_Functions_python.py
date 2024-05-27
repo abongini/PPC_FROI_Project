@@ -21,6 +21,25 @@ from pathlib import Path
 import os
 
 
+# <span style="font-size:14pt; text-decoration:underline;"> Complementary Functions </span>
+
+# In[17]:
+
+## Find the index of the second attached carbon on finish_pattern ##
+def neighbor_index(finish,atom):
+    oxygene_idx = int(finish.GetSubstructMatches(Chem.MolFromSmiles(atom))[0][0])                         
+    neighbor_carbon_idx = finish.GetAtomWithIdx(oxygene_idx).GetNeighbors() 
+    carbon_neighbor_idx = None
+    
+    # Get the neihgbor's neighbor of the oxygene atom #
+    for neighbor in neighbor_carbon_idx:
+        neighbors_neighbor = neighbor.GetNeighbors()
+    # Get idx of the neighbor's neighbor of the O atom #
+        for neighbor_neighbor in neighbors_neighbor:
+            if neighbor_neighbor.GetIdx() != oxygene_idx:
+                carbon_neighbor_idx = neighbor_neighbor.GetIdx()
+    return carbon_neighbor_idx
+
 # <span style="font-size:14pt; text-decoration:underline;"> Deprotonation of Carbonyl </span>
 
 # In[4]:
@@ -482,18 +501,19 @@ def Hydration_function(input_smiles):
 # In[14]:
 
 
-def heterocycle_synthesis_function(input_smiles, input_smiles_2):
+def heterocycle_synthesis_function(start, start2):
+    
     ## set the variables ##
     start_pattern = Chem.MolFromSmiles("C(=O)CCC(=O)")
-    start_mol = Chem.MolFromSmiles(input_smiles)
+    start_mol = Chem.MolFromSmiles(start)
     finish_pattern = Chem.MolFromSmiles("c1cc[N]c1")
-    start2_mol = Chem.MolFromSmiles(input_smiles_2)
+    start2_mol = Chem.MolFromSmiles(start2)
     start2_pattern = Chem.MolFromSmiles("N")
     
 ############################# Finding Index of atoms which reacts #########################################
    
     ## Get the big smiles and mol by adding start and start2 together ##
-    big_smiles = input_smiles + "." + input_smiles_2
+    big_smiles = start + "." + start2
     big_mol = Chem.MolFromSmiles(big_smiles)
     
     
@@ -706,23 +726,8 @@ def reduction_cyanohydrine_function(input_smiles):
     return finish_mol1
 
 
-# <span style="font-size:14pt; text-decoration:underline;"> Complementary Functions </span>
-
-# In[17]:
 
 
-## Find the index of the second attached carbon on finish_pattern ##
-def neighbor_index(finish,atom):
-    oxygene_idx = int(finish.GetSubstructMatches(Chem.MolFromSmiles(atom))[0][0])                         
-    neighbor_carbon_idx = finish.GetAtomWithIdx(oxygene_idx).GetNeighbors() 
-    carbon_neighbor_idx = None
-    
-    # Get the neihgbor's neighbor of the oxygene atom #
-    for neighbor in neighbor_carbon_idx:
-        neighbors_neighbor = neighbor.GetNeighbors()
-    # Get idx of the neighbor's neighbor of the O atom #
-        for neighbor_neighbor in neighbors_neighbor:
-            if neighbor_neighbor.GetIdx() != oxygene_idx:
-                carbon_neighbor_idx = neighbor_neighbor.GetIdx()
-    return carbon_neighbor_idx
+
+
 

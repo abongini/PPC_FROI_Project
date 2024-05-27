@@ -71,7 +71,7 @@ def test_check_same_dict_in_list1():
     assert name_test == correct_name
 
 
-def check_same_dict_in_list3():
+def test_check_same_dict_in_list3():
     finish = Chem.MolFromSmiles("CC(O)C")
     condition = "Base and Nucleophile"
     name_test = check_same_dict_in_list3(finish, condition, Reaction)

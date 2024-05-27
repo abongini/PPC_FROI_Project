@@ -67,30 +67,55 @@ def test_wolfkischner_function():
     result = Chem.MolToSmiles(WolfKishner_function(start_smiles), canonical=True)
     assert result == canonicalize_smi("C1ccCCCCC1")
 
-def strecker_reaction_function(input_smiles):
-    start_smiles = "c1ccccc1CC(=O)CCC(=O)CCC"
+def test_strecker_reaction_function():
+    start_smiles = "c1ccccc1CC(=O)C1CCCCC1"
     result = Chem.MolToSmiles(strecker_reaction_function(start_smiles),canonical=True)
-    assert result == canonicalize_smi("c1ccccc1CC(O)(N)CCC(=O)CCC")
-    
-def pinacol_function (input_smiles):
-    start_smiles = "OC1(C2(O)CCCC2)CCCC1"
+    assert result == canonicalize_smi("c1ccccc1CC(O)(N)C1CCCCC1")
+
+def test_pinacol_function ():
+    start_smiles = "C1CCC1(O)C(O)(c1ccccc1)(c1ccccc1)"
     result = Chem.MolToSmiles(pinacol_function (start_smiles),canonical=True)
-    assert result == canonicalize_smi("C2CCCC12C(=O)CCCC1")
-    
-def Hydration_function(input_smiles):
-    start_smiles = "C=[O+]CCC=O"
+    assert result == canonicalize_smi("C1CCC(=O)C1(c1ccccc1)(c1ccccc1)")
+
+def test_pinacol_function1 ():
+    start_smiles = "C1CCCC1(O)C(O)(c1ccccc1)(c1ccccc1)"
+    result = Chem.MolToSmiles(pinacol_function (start_smiles),canonical=True)
+    assert result == canonicalize_smi("C1CCCC(=O)C1(c1ccccc1)(c1ccccc1)")
+
+def test_pinacol_function2 ():
+    start_smiles = "C1CCCCC1(O)C(O)(c1ccccc1)(c1ccccc1)"
+    result = Chem.MolToSmiles(pinacol_function (start_smiles),canonical=True)
+    assert result == canonicalize_smi("C1CCCCC(=O)C1(c1ccccc1)(c1ccccc1)")
+
+def test_pinacol_function3 ():
+    start_smiles = "C1CCCCCC1(O)C(O)(c1ccccc1)(c1ccccc1)"
+    result = Chem.MolToSmiles(pinacol_function (start_smiles),canonical=True)
+    assert result == canonicalize_smi("C1CCCCCC(=O)C1(c1ccccc1)(c1ccccc1)")
+
+def test_pinacol_function4 ():
+    start_smiles = "C1CCCCCCC1(O)C(O)(c1ccccc1)(c1ccccc1)"
+    result = Chem.MolToSmiles(pinacol_function (start_smiles),canonical=True)
+    assert result == canonicalize_smi("C1CCCCCCC(=O)C1(c1ccccc1)(c1ccccc1)")
+
+def test_pinacol_function5 ():
+    start_smiles = "C1CC1(O)C(O)(c1ccccc1)(c1ccccc1)"
+    result = Chem.MolToSmiles(pinacol_function (start_smiles),canonical=True)
+    assert result == canonicalize_smi("C1CC(=O)C1(c1ccccc1)(c1ccccc1)")
+
+def test_Hydration_function():
+    start_smiles = "C1CCC(=O)CC1"
     result = Chem.MolToSmiles(Hydration_function(start_smiles),canonical=True)
-    assert result == canonicalize_smi("C=[O+]CCC(O)(O)")
+    assert result == canonicalize_smi("C1CCC(O)(O)CC1")
     
-def bisulfite_add_compounds1_function(input_smiles):
-    start_smiles = "c1ccccc1CC(=O)CCC(=O)CCC"
+def test_bisulfite_add_compounds1_function():
+    start_smiles = "c1ccccc1CC(=O)C1CCCCC1"
     result = Chem.MolToSmiles(bisulfite_add_compounds1_function(start_smiles),canonical=True)
-    assert result == canonicalize_smi("c1ccccc1CC(O)(S(=O)(=O)[O-].[Na+])CCC(=O)CCC")
+    assert result == canonicalize_smi("c1ccccc1CC(O)(S(=O)(=O)[O-].[Na+])C1CCCCC1")
     
-def reduction_cyanohydrine_function(input_smiles):
-    start_smiles = "c1ccccc1CC(=O)CCC(=O)CCC"
+def test_reduction_cyanohydrine_function():
+    start_smiles = "c1ccccc1CC(=O)C1CCCCC1"
     result = Chem.MolToSmiles(reduction_cyanohydrine_function(start_smiles),canonical=True)
-    assert result == canonicalize_smi("c1ccccc1CC(O)(CN)CCC(=O)CCC")
+    assert result == canonicalize_smi("c1ccccc1CC(O)(CN)C1CCCCC1")
     
 ############# Test for function needed in some reaction #############
 

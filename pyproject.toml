@@ -14,7 +14,7 @@ dependencies = [
     "pathlib",
 ]
 authors = [
-    {name = "Arthur Bongini", email = "arthur.bongini@epfl.ch"}
+    {name = "Arthur Bongini", email = "arthur.bongini@epfl.ch"}, {name = "Emna Belgharbia", email = "emna.belgharbia@epfl.ch"}, {name = "Oriane Azalbert", email = "oriane.azalbert@epfl.ch"}
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
