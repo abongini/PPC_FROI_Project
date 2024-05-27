@@ -23,7 +23,9 @@ Why ?
 
  It simplifies identifying reaction pathways and predicting products, thus enhancing study efficiency and accuracy for students preparing their FROI exam.
 
-Example:
+How ?
+
+You can import and used our package with the following command:
  
 ```python
 from ppc_froi_project import main
@@ -31,8 +33,9 @@ from ppc_froi_project import main
 # One line to rule them all
 main()
 ```
-
+In addition, this python package returns the name of the reaction if it is present in our database but not coded. Several input cases are possible, such as: starting molecule - condition, first starting molecule - second, first starting molecule - second condition and ending molecule - condition.
 This usage example shows how to quickly leverage the package's main functionality with just one line of code (or a few lines of code). 
+
 After importing the `main_func` (to be renamed by you), you simply pass in your `data` and get the `result` (this is just an example, your package might have other inputs and outputs). 
 Short and sweet, but the real power lies in the detailed documentation.
 
