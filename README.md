@@ -25,7 +25,7 @@ Why ?
 
 How ?
 
-You can import and used our package with the following command:
+After installation, you can import and used our package with the following command:
  
 ```python
 from ppc_froi_project.Report import main
