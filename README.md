@@ -28,7 +28,7 @@ How ?
 You can import and used our package with the following command:
  
 ```python
-from ppc_froi_project import main
+from ppc_froi_project.Report import main
 
 # One line to rule them all
 main()
