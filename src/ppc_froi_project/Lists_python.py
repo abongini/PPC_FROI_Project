@@ -43,7 +43,7 @@ Condition = [ "Base and Nucleophile", "Acid and Nucleophile", "H2O and acid", " 
              "S(=O)(=O)[O-].[Na+]", "NH3, HCN", "HCN, LiAlH4", "H+,H2O", "HCN", "C2OOH", "Base", "H-",
              "NaBH4, -78°C", "NaBH4, CeCl3, MeOH", "LiAlH4, 2 équiv.", "LiAlH4",  "H+, NaBH3CN", "NH2NH2, KOH, 180°C",
              "Zn(Hg), HCl, reflux", "Al(OR)3", "SmI2, THF, -10°C", "KOH, reflux", "CN-, EtOH, H2O",
-             "KCN (0,3 equiv), 18-C-6 (0,1 equiv)", "Catalyst: CN", "Al(iPr)3", "KHMDS, 18-Crown-6, -78°C"]
+             "KCN (0,3 equiv), 18-C-6 (0,1 equiv)", "Catalyst: CN", "Al(iPr)3", "KHMDS, 18-Crown-6, -78°C", "H+"]
 
 ## All the reactions names 
 
