@@ -13,7 +13,11 @@ PPC_FROI_Project
 
 What is it ? 
 
-This project is designed to assist in solving exams questions for the course "Fonctions et Réactions Organiques I," taught by Professor Jieping Zhu. It specifically addresses questions related to both reversible and irreversible carbonyl reactions.
+This project is designed to assist in solving exams questions for the course "Fonctions et Réactions Organiques I," taught by Professor Jieping Zhu at EPFL. It specifically addresses questions related to both reversible and irreversible carbonyl reactions.
+
+Who ?
+
+Our names are Arthur Bongini, Emna Belgharbia and Oriane Azalbert. We're three students who are very interested in organic chemistry and we decided to use this knowledge for our project. When we split up, Oriane was mainly in charge of the main code, the brain that makes everything work. While Emna and Arthur were busy researching and coding the reactions we wanted.
 
 How It Works? 
 
