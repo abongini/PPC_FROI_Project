@@ -69,6 +69,7 @@ Moreover, to use our project, you will need to install some extern python packag
 (ppc_froi_project) $ pip install rdkit
 (ppc_froi_project) $ pip install IPython
 (ppc_froi_project) $ pip install pathlib
+(ppc_froi_project) $ pip install PandasTools
 ```
 
 ### Run tests and coverage
