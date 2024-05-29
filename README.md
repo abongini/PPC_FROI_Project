@@ -25,7 +25,7 @@ Why ?
 
 How ?
 
-After installation, you can import and used our package with the following command:
+After installation, you can import and used our package with the following command on, on a jupyter botebooks for example:
  
 ```python
 from ppc_froi_project.Report import main
@@ -34,7 +34,7 @@ from ppc_froi_project.Report import main
 main()
 ```
 In addition, this python package returns the name of the reaction if it is present in our database but not coded. Several input cases are possible, such as: starting molecule - condition, first starting molecule - second, first starting molecule - second condition and ending molecule - condition.
-Short and sweet, but the real power lies in the detailed documentation grouped together in the various jupyter notebooks placed in the folder of the same name !
+Short and sweet, but the real power lies in the detailed documentation grouped together in the various jupyter notebooks placed in the folder of the same name!
 
 Have fun testing reactions! For more information on the types of reactions coded, don't hesitate to consult the Reaction_Functions.ipynb, Lists.ipynb and Dictionnaries.ipynb notebooks! They're packed with information on the patterns of the starting molecules, the conditions of the reactions and the patterns of the final molecules we've coded. Happy coding !
 
@@ -48,7 +48,7 @@ conda create -n ppc_froi_project python=3.10
 
 ```
 conda activate ppc_froi_project
-(conda_env) $ pip install .
+(ppc_froi_project) $ pip install .
 ```
 
 If you need jupyter lab, install it 
@@ -56,7 +56,13 @@ If you need jupyter lab, install it
 ```
 (ppc_froi_project) $ pip install jupyterlab
 ```
+Moreover, to use our project, you will need to install some extern python package, see the list of command below:
 
+```
+(ppc_froi_project) $ pip install rdkit
+(ppc_froi_project) $ pip install IPython
+(ppc_froi_project) $ pip install pathlib
+```
 
 ## 🛠️ Development installation
 
