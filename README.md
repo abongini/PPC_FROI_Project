@@ -32,6 +32,7 @@ How ?
 After installation, you can import and used our package with the following command on, on a jupyter botebooks for example:
  
 ```python
+# you
 from ppc_froi_project.Report import main
 
 # One line to rule them all
@@ -52,6 +53,8 @@ conda create -n ppc_froi_project python=3.10
 
 ```
 conda activate ppc_froi_project
+(ppc_froi_project) $ git clone https://github.com/abongini/PPC_FROI_Project.git
+(ppc_froi_project) $ cd PPC_FROI_Project
 (ppc_froi_project) $ pip install .
 ```
 
@@ -66,30 +69,6 @@ Moreover, to use our project, you will need to install some extern python packag
 (ppc_froi_project) $ pip install rdkit
 (ppc_froi_project) $ pip install IPython
 (ppc_froi_project) $ pip install pathlib
-```
-
-## 🛠️ Development installation
-
-Initialize Git (only for the first time). 
-
-Note: You should have create an empty repository on `https://github.com`.
-
-```
-git init
-git add * 
-git add .*
-git commit -m "Initial commit" 
-git branch -M main
-git remote add origin git@github.com:abongini/PPC_FROI_Project.git 
-git push -u origin main
-```
-
-Then add and commit changes as usual. 
-
-To install the package, run
-
-```
-(ppc_froi_project) $ pip install -e ".[test,doc]"
 ```
 
 ### Run tests and coverage
