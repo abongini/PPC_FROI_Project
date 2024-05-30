@@ -15,10 +15,10 @@
 from rdkit import Chem
 from rdkit.Chem import AllChem
 from rdkit.Chem import Draw
-from IPython.display import display
+#from IPython.display import display
 import sys
 
-from rdkit.Chem import PandasTools
+#from rdkit.Chem import PandasTools
 #import pandas as pd
 from pathlib import Path
 import os
