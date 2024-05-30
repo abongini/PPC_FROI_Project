@@ -18,7 +18,7 @@ Start = ["CC(=O)C", "OCCO", "OCCCO" , "NN", "OCCCCC(=O)CCCCO", "CC(O)(O)C", "c1c
          "CC(OC)(OC)C", "CN", "C#N", "CC(=O)CCC(=O)C", "CC(=O)", "C1CCC=CC(=O)1", "CC(=O)OC",
          "CC(=O)N(C)C", "C[C@@H](O)CC(=O)C", "c1ccccc1O", "CC(=O)[Si](CC)(CC)CC", "CC=CC(=O)C", 
          "P(c1ccccc1)(c1ccccc1)(c1cccccc1)CC", "P(=O)(OC)(OC)C", "P(OC)(OC)(OC)", "CCI", "CCBr",
-         "CCF", "CCCl", "P(OCC(F)(F)F)(OCC(F)(F)F)(=O)CC(=O)OC" ]
+         "CCF", "CCCl", "P(OCC(F)(F)F)(OCC(F)(F)F)(=O)CC(=O)OC", "C(O)C(O)" ]
 
 Start2 = ["N=O", "NO", "OCCO", "OCCCO", "NC", "CN", "NN", "CC(OC)(OC)C", "c1ccc2c(c1)c[nH]c2CCN", 
           "CC=O", "c1ccccc1O", "CC(=O)C", "CC=CC(=O)C","CC(O)C", "P(c1ccccc1)(c1ccccc1)(c1cccccc1)CC", 
@@ -34,7 +34,7 @@ Finish = ["CC(O)C", "CC(O)(O)C","CC(O)(OC)C", "CC(OC)(OC)C","C1(C)(C)OCCO1",
           "Cn1c(C)ccc1(C)", "CC([O-])=CC", "CC(O)C", "CCO", "C1CCC=CC(O)1", "CCN(C)C", "CC(NC)C", "CCC",
           "CC(=O)OCC", "CC[C@H](O)C[C@H](C)OC(=O)C", "c1ccccc1C(=O)O", "c1ccccc1C(=O)Oc1ccccc1", 
           "CCC(=O)C(O[Si](CC)(CC)CC)C", "CC(=O)C(C)CC(=O)C", "CC=C(C)C", "CC=CC", "P(=O)(OC)(OC)CC",
-          "C/C=C\C(=O)OC", "C=O", "c1ccccc1CO", "CO" ]
+          "C/C=C\C(=O)OC", "C=O", "c1ccccc1CO", "CO", "C(O)C(O)" ]
 
 ## All the available reaction conditions 
 
@@ -55,7 +55,7 @@ Reaction = [ "wolf_kishner_huang_reduction", "nucleophilic_attack2", "hydration"
             "aldehyde_reduction", "luche_reaction", "ester_reduction", "amide_reduction", "iminie_reduction", "clemmesen_reduction", 
             "tischenko_reaction", "tischenko_evans_reaction", "canizzaro_reaction", "benzoin_reaction", "cross_benzoin_reaction", "stetter_reaction", 
             "mpv_reaction", "wittig_reaction", "horner_wadsworth_emmons_rxn", "abruzov_reaction_iode", "abruzov_reaction_brome", 
-            "abruzov_reaction_fluor", "abruzov_reaction_chlore", "still_grenari_olefination", "pinacol", "nucleophilic_attack1",  "Pictet_Spengler_Reaction"
+            "abruzov_reaction_fluor", "abruzov_reaction_chlore", "still_grenari_olefination", "pinacol", "nucleophilic_attack1",  "Pictet_Spengler_Reaction",
                 ]
 
 ## Link between the reaction and its corresponding function
